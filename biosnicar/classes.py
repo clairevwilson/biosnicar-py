@@ -53,7 +53,7 @@ class Impurity:
         self.file = file
 
         self.impurity_properties = xr.open_dataset(
-            str(os.getcwd() + "/" + "/Data/OP_data/480band/lap/" + file)
+            str(os.getcwd() + "/biosnicar-py" + "/Data/OP_data/480band/lap/" + file)
         )
 
         if coated:

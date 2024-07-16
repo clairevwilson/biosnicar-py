@@ -49,4 +49,5 @@ def get(solver, plot, validate):
     if plot:
         plot_albedo(plot_config, model_config, outputs.albedo)
     display_out_data(outputs)
-    return outputs.albedo
+    # return outputs.albedo
+    return outputs.albedo, illumination.flx_slr
