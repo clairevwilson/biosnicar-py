@@ -25,6 +25,9 @@ import numpy as np
 import xarray as xr
 import yaml
 
+# Fix for directory issues if you run the model in different folders
+base_fp = os.getcwd()
+# base_fp = "/home/claire/research/PyGEM-EB/"
 
 class Impurity:
     """Light absorbing impurity.
@@ -53,7 +56,7 @@ class Impurity:
         self.file = file
 
         self.impurity_properties = xr.open_dataset(
-            str(os.getcwd() + "/biosnicar-py" + "/Data/OP_data/480band/lap/" + file)
+            str(base_fp+"biosnicar-py/Data/OP_data/480band/lap/" + file)
         )
 
         if coated:
@@ -103,7 +106,7 @@ class Ice:
         self.cdom = inputs["ICE"]["CDOM"]
         self.rho = inputs["ICE"]["RHO"]
         self.sfc = np.genfromtxt(
-            os.getcwd() + "/" + inputs["PATHS"]["SFC"], delimiter="csv"
+            base_fp + inputs["PATHS"]["SFC"], delimiter="csv"
         )
         self.rf = inputs["ICE"]["RF"]
         self.shp = inputs["ICE"]["SHP"]
@@ -142,8 +145,8 @@ class Ice:
         with open(input_file, "r") as ymlfile:
             inputs = yaml.load(ymlfile, Loader=yaml.FullLoader)
 
-        refidx_file = xr.open_dataset(inputs["PATHS"]["RI_ICE"] + "rfidx_ice.nc")
-        fresnel_diffuse_file = xr.open_dataset(
+        refidx_file = xr.open_dataset(base_fp + inputs["PATHS"]["RI_ICE"] + "rfidx_ice.nc")
+        fresnel_diffuse_file = xr.open_dataset(base_fp + 
             inputs["PATHS"]["RI_ICE"] + "fl_reflection_diffuse.nc"
         )
 
@@ -183,7 +186,7 @@ class Illumination:
         self.direct = inputs["RTM"]["DIRECT"]
         self.solzen = inputs["RTM"]["SOLZEN"]
         self.incoming = inputs["RTM"]["INCOMING"]
-        self.flx_dir = os.getcwd() + "/" + inputs["PATHS"]["FLX_DIR"]
+        self.flx_dir = "/home/claire/research/PyGEM-EB" + "/" + inputs["PATHS"]["FLX_DIR"]
         self.stubs = inputs["RTM"]["ILLUMINATION_FILE_STUBS"]
         self.nbr_wvl = inputs["RTM"]["NBR_WVL"]
 
@@ -292,7 +295,7 @@ class ModelConfig:
         self.smooth = inputs["CTRL"]["SMOOTH"]
         self.window_size = inputs["CTRL"]["WINDOW_SIZE"]
         self.poly_order = inputs["CTRL"]["POLY_ORDER"]
-        self.dir_base = str(os.getcwd() + "/")
+        self.dir_base = str("/home/claire/research/PyGEM-EB" + "/")
         self.dir_wvl = inputs["PATHS"]["WVL"]
         self.sphere_ice_path = inputs["PATHS"]["SPHERE_ICE"]
         self.fn_ice = inputs["PATHS"]["FN_ICE"]
