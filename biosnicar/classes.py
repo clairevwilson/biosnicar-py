@@ -26,7 +26,7 @@ import xarray as xr
 import yaml
 
 # Fix for directory issues if you run the model in different folders
-base_fp = os.getcwd()
+base_fp = os.getcwd() + '/'
 # base_fp = "/home/claire/research/PyGEM-EB/"
 
 class Impurity:
