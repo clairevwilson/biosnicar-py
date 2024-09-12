@@ -186,7 +186,7 @@ class Illumination:
         self.direct = inputs["RTM"]["DIRECT"]
         self.solzen = inputs["RTM"]["SOLZEN"]
         self.incoming = inputs["RTM"]["INCOMING"]
-        self.flx_dir = "/home/claire/research/PyGEM-EB" + "/" + inputs["PATHS"]["FLX_DIR"]
+        self.flx_dir = base_fp + inputs["PATHS"]["FLX_DIR"]
         self.stubs = inputs["RTM"]["ILLUMINATION_FILE_STUBS"]
         self.nbr_wvl = inputs["RTM"]["NBR_WVL"]
 
@@ -295,7 +295,7 @@ class ModelConfig:
         self.smooth = inputs["CTRL"]["SMOOTH"]
         self.window_size = inputs["CTRL"]["WINDOW_SIZE"]
         self.poly_order = inputs["CTRL"]["POLY_ORDER"]
-        self.dir_base = str("/home/claire/research/PyGEM-EB" + "/")
+        self.dir_base = base_fp
         self.dir_wvl = inputs["PATHS"]["WVL"]
         self.sphere_ice_path = inputs["PATHS"]["SPHERE_ICE"]
         self.fn_ice = inputs["PATHS"]["FN_ICE"]
