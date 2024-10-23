@@ -10,6 +10,7 @@ from biosnicar.display import display_out_data, plot_albedo
 from biosnicar.setup_snicar import setup_snicar
 from biosnicar.toon_rt_solver import toon_solver
 
+input_fp = 'biosnicar-py/biosnicar/inputs.yaml'
 
 def get(solver, plot, validate):
     (
@@ -19,7 +20,7 @@ def get(solver, plot, validate):
         model_config,
         plot_config,
         impurities,
-    ) = setup_snicar("default")
+    ) = setup_snicar(input_fp)
 
     if validate:
         validate_inputs(ice, illumination, impurities)
@@ -49,4 +50,4 @@ def get(solver, plot, validate):
     if plot:
         plot_albedo(plot_config, model_config, outputs.albedo)
     display_out_data(outputs)
-    return outputs.albedo
+    return outputs.albedo, illumination.flx_slr

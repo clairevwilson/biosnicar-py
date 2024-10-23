@@ -15,5 +15,3 @@ tqdm
 pyyaml
 bump2version
 plotly
-.
-
