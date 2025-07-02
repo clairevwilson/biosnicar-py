@@ -50,119 +50,52 @@ CTRL:
 ICE:
   AR:
   - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
   CDOM:
   - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
   DZ:
-  - 0.049950480413739604
-  - 0.07336901543190412
-  - 0.1093894269592224
-  - 0.16366070707708746
-  - 0.24476058119952515
-  - 0.3654167331768163
-  - 0.5465183203779242
+  - 0.012392941356842173
   HEX_LENGTH:
-  - 10000
-  - 10000
-  - 10000
-  - 10000
-  - 10000
-  - 10000
   - 10000
   HEX_SIDE:
   - 10000
-  - 10000
-  - 10000
-  - 10000
-  - 10000
-  - 10000
-  - 10000
   LAYER_TYPE:
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
+  - 4
+  LWC:
+  - 0.7829282108348347
+  LWC_PCT_BBL: 0
   RDS:
-  - 178
-  - 1486
-  - 82
-  - 121
-  - 305
-  - 366
-  - 407
+  - 54
   RF: 2
   RHO:
-  - 160.6190758035864
-  - 163.1330266423515
-  - 197.01716977634462
-  - 233.36698947284066
-  - 267.99517483088187
-  - 297.04404264447567
-  - 330.44862759640324
+  - 166.9308709189861
   SHP:
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
   - 0
   SHP_FCTR:
   - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  WATER:
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
+  WATER_COATING:
   - 0
 IMPURITIES:
   BC:
     CFACTOR: 1
     COATED: false
     CONC:
-    - 0.034098869069123273
-    - 0.0
-    - 0.0
-    - 0.0
-    - 0.0
-    - 0.0
-    - 0.0
+    - 3.919555318187272
     FILE: bc_ChCB_rn40_dns1270.nc
     NAME: bc
+    UNIT: 0
+  OC:
+    CFACTOR: 1
+    COATED: false
+    CONC:
+    - 3.919555318187272
+    FILE: brC_Kirch_BCsd.nc
+    NAME: oc
     UNIT: 0
   DUST1:
     CFACTOR: 1
     COATED: false
     CONC:
-    - 0.10345321498158483
-    - 0.0
-    - 0.0
-    - 0.0
-    - 0.0
-    - 0.0
-    - 0.0
+    - 4.797401470281503
     FILE: dust_balkanski_central_size1.nc
     NAME: dust
     UNIT: 0
@@ -170,13 +103,7 @@ IMPURITIES:
     CFACTOR: 1
     COATED: false
     CONC:
-    - 0.2828777323098328
-    - 0.0
-    - 0.0
-    - 0.0
-    - 0.0
-    - 0.0
-    - 0.0
+    - 13.117794832520728
     FILE: dust_balkanski_central_size2.nc
     NAME: dust
     UNIT: 0
@@ -184,13 +111,7 @@ IMPURITIES:
     CFACTOR: 1
     COATED: false
     CONC:
-    - 0.6635263292444058
-    - 0.0
-    - 0.0
-    - 0.0
-    - 0.0
-    - 0.0
-    - 0.0
+    - 30.769485395443983
     FILE: dust_balkanski_central_size3.nc
     NAME: dust
     UNIT: 0
@@ -198,13 +119,7 @@ IMPURITIES:
     CFACTOR: 1
     COATED: false
     CONC:
-    - 0.2807081076281285
-    - 0.0
-    - 0.0
-    - 0.0
-    - 0.0
-    - 0.0
-    - 0.0
+    - 13.017183550021482
     FILE: dust_balkanski_central_size4.nc
     NAME: dust
     UNIT: 0
@@ -212,30 +127,33 @@ IMPURITIES:
     CFACTOR: 1
     COATED: false
     CONC:
-    - 0.04683634233520485
-    - 0.0
-    - 0.0
-    - 0.0
-    - 0.0
-    - 0.0
-    - 0.0
+    - 2.1719260983964195
     FILE: dust_balkanski_central_size5.nc
     NAME: dust
     UNIT: 0
 PATHS:
-  BUBBLY_ICE: biosnicar-py/Data/OP_data/480band/bubbly_ice_files/
-  FLX_DIR: biosnicar-py/Data/OP_data/480band/fsds/
-  FN_ICE: /biosnicar-py/Data/OP_data/480band/rfidx_ice.nc
-  FN_WATER: /biosnicar-py/Data/OP_data/Refractive_Index_Liquid_Water_Segelstein_1981.csv
-  HEX_ICE: biosnicar-py/Data/OP_data/480band/ice_hexagonal_columns/
+  BUBBLY_ICE: Data/OP_data/480band/bubbly_ice_files/
+  FLX_DIR: Data/OP_data/480band/fsds/
+  FN_ICE: /Data/OP_data/480band/rfidx_ice.nc
+  FN_WATER: /Data/OP_data/Refractive_Index_Liquid_Water_Segelstein_1981.csv
+  HEX_ICE: Data/OP_data/480band/ice_hexagonal_columns/
+  ILLUMINATION_FILE_STUBS:
+  - swnb_480bnd_mlw
+  - swnb_480bnd_mls
+  - swnb_480bnd_saw
+  - swnb_480bnd_sas
+  - swnb_480bnd_smm
+  - swnb_480bnd_hmn
+  - swnb_480bnd_trp
   OP_DIR_STUBS:
   - ice_Wrn84/ice_Wrn84_
   - ice_Wrn08/ice_Wrn08_
   - ice_Pic16/ice_Pic16_
-  RI_ICE: biosnicar-py/Data/OP_data/480band/
-  SFC: /biosnicar-py/Data/OP_data/480band/r_sfc/blue_ice_spectrum_s10290721.csv
-  SPHERE_ICE: biosnicar-py/Data/OP_data/480band/ice_spherical_grains/
-  WVL: biosnicar-py/Data/OP_data/wavelengths.csv
+  RI_ICE: Data/OP_data/480band/
+  SFC: /Data/OP_data/480band/r_sfc/blue_ice_spectrum_s10290721.csv
+  SPHERE_ICE: Data/OP_data/480band/ice_spherical_grains/
+  SPHERE_WATER: Data/OP_data/480band/water_spherical_grains/
+  WVL: Data/OP_data/wavelengths.csv
 PLOT:
   FACECOLOR: white
   FIG_SIZE: (8,6)
@@ -244,6 +162,7 @@ PLOT:
   GRIDCOLOR: '.8'
   LINEWIDTH: 1.25
   SAVE: false
+  SAVEPATH: ''
   XTICK_BTM: true
   XTICK_SIZE: 5
   XTICK_WIDTH: 1
@@ -254,16 +173,8 @@ RTM:
   APRX_TYP: 2
   DELTA: true
   DIRECT: 1
-  ILLUMINATION_FILE_STUBS:
-  - swnb_480bnd_mlw
-  - swnb_480bnd_mls
-  - swnb_480bnd_saw
-  - swnb_480bnd_sas
-  - swnb_480bnd_smm
-  - swnb_480bnd_hmn
-  - swnb_480bnd_trp
   INCOMING: 0
   NBR_WVL: 480
   NIR_MAX_IDX: 480
-  SOLZEN: 51
+  SOLZEN: 48
   VIS_MAX_IDX: 39
