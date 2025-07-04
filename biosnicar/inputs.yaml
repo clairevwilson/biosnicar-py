@@ -50,52 +50,128 @@ CTRL:
 ICE:
   AR:
   - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
   CDOM:
   - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
   DZ:
-  - 0.012392941356842173
+  - 0.049950480413739604
+  - 0.07336901543190412
+  - 0.1093894269592224
+  - 0.16366070707708746
+  - 0.24476058119952515
+  - 0.3654167331768163
+  - 0.5465183203779242
   HEX_LENGTH:
+  - 10000
+  - 10000
+  - 10000
+  - 10000
+  - 10000
+  - 10000
   - 10000
   HEX_SIDE:
   - 10000
+  - 10000
+  - 10000
+  - 10000
+  - 10000
+  - 10000
+  - 10000
   LAYER_TYPE:
-  - 4
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
   LWC:
-  - 0.7829282108348347
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
   LWC_PCT_BBL: 0
   RDS:
-  - 54
+  - 178
+  - 1486
+  - 82
+  - 121
+  - 305
+  - 366
+  - 407
   RF: 2
   RHO:
-  - 166.9308709189861
+  - 160.6190758035864
+  - 163.1330266423515
+  - 197.01716977634462
+  - 233.36698947284066
+  - 267.99517483088187
+  - 297.04404264447567
+  - 330.44862759640324
   SHP:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
   - 0
   SHP_FCTR:
   - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
   WATER_COATING:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
   - 0
 IMPURITIES:
   BC:
     CFACTOR: 1
     COATED: false
     CONC:
-    - 3.919555318187272
+    - 0.034098869069123273
+    - 0.0
+    - 0.0
+    - 0.0
+    - 0.0
+    - 0.0
+    - 0.0
     FILE: bc_ChCB_rn40_dns1270.nc
     NAME: bc
-    UNIT: 0
-  OC:
-    CFACTOR: 1
-    COATED: false
-    CONC:
-    - 3.919555318187272
-    FILE: brC_Kirch_BCsd.nc
-    NAME: oc
     UNIT: 0
   DUST1:
     CFACTOR: 1
     COATED: false
     CONC:
-    - 4.797401470281503
+    - 0.10345321498158483
+    - 0.0
+    - 0.0
+    - 0.0
+    - 0.0
+    - 0.0
+    - 0.0
     FILE: dust_balkanski_central_size1.nc
     NAME: dust
     UNIT: 0
@@ -103,7 +179,13 @@ IMPURITIES:
     CFACTOR: 1
     COATED: false
     CONC:
-    - 13.117794832520728
+    - 0.2828777323098328
+    - 0.0
+    - 0.0
+    - 0.0
+    - 0.0
+    - 0.0
+    - 0.0
     FILE: dust_balkanski_central_size2.nc
     NAME: dust
     UNIT: 0
@@ -111,7 +193,13 @@ IMPURITIES:
     CFACTOR: 1
     COATED: false
     CONC:
-    - 30.769485395443983
+    - 0.6635263292444058
+    - 0.0
+    - 0.0
+    - 0.0
+    - 0.0
+    - 0.0
+    - 0.0
     FILE: dust_balkanski_central_size3.nc
     NAME: dust
     UNIT: 0
@@ -119,7 +207,13 @@ IMPURITIES:
     CFACTOR: 1
     COATED: false
     CONC:
-    - 13.017183550021482
+    - 0.2807081076281285
+    - 0.0
+    - 0.0
+    - 0.0
+    - 0.0
+    - 0.0
+    - 0.0
     FILE: dust_balkanski_central_size4.nc
     NAME: dust
     UNIT: 0
@@ -127,7 +221,13 @@ IMPURITIES:
     CFACTOR: 1
     COATED: false
     CONC:
-    - 2.1719260983964195
+    - 0.04683634233520485
+    - 0.0
+    - 0.0
+    - 0.0
+    - 0.0
+    - 0.0
+    - 0.0
     FILE: dust_balkanski_central_size5.nc
     NAME: dust
     UNIT: 0
@@ -176,5 +276,5 @@ RTM:
   INCOMING: 0
   NBR_WVL: 480
   NIR_MAX_IDX: 480
-  SOLZEN: 48
+  SOLZEN: 51
   VIS_MAX_IDX: 39
