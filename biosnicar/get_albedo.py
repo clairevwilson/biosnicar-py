@@ -9,6 +9,7 @@ from biosnicar.column_OPs import get_layer_OPs, mix_in_impurities
 from biosnicar.display import display_out_data, plot_albedo
 from biosnicar.setup_snicar import setup_snicar
 from biosnicar.toon_rt_solver import toon_solver
+import os
 
 input_fp = 'biosnicar-py/biosnicar/inputs.yaml'
 
@@ -50,4 +51,6 @@ def get(solver, plot, validate):
     if plot:
         plot_albedo(plot_config, model_config, outputs.albedo)
     display_out_data(outputs)
+
+    # return outputs.albedo
     return outputs.albedo, illumination.flx_slr
