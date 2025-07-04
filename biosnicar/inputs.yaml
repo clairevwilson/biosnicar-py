@@ -53,29 +53,17 @@ ICE:
   - 0
   - 0
   - 0
-  - 0
-  - 0
-  - 0
   CDOM:
   - 0
   - 0
   - 0
   - 0
-  - 0
-  - 0
-  - 0
   DZ:
-  - 0.049950480413739604
-  - 0.07336901543190412
-  - 0.1093894269592224
-  - 0.16366070707708746
-  - 0.24476058119952515
-  - 0.3654167331768163
-  - 0.5465183203779242
+  - 0.01998397821659021
+  - 0.03361501504468781
+  - 0.033615061061806915
+  - 0.04555057083554751
   HEX_LENGTH:
-  - 10000
-  - 10000
-  - 10000
   - 10000
   - 10000
   - 10000
@@ -85,47 +73,29 @@ ICE:
   - 10000
   - 10000
   - 10000
-  - 10000
-  - 10000
-  - 10000
   LAYER_TYPE:
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
-  - 0
+  - 4
+  - 4
+  - 4
+  - 4
   LWC:
-  - 0
-  - 0
-  - 0
   - 0
   - 0
   - 0
   - 0
   LWC_PCT_BBL: 0
   RDS:
-  - 178
-  - 1486
-  - 82
-  - 121
-  - 305
-  - 366
-  - 407
+  - 1433
+  - 2000
+  - 2000
+  - 1500
   RF: 2
   RHO:
-  - 160.6190758035864
-  - 163.1330266423515
-  - 197.01716977634462
-  - 233.36698947284066
-  - 267.99517483088187
-  - 297.04404264447567
-  - 330.44862759640324
+  - 151.51737277193627
+  - 167.6540292970594
+  - 167.6540292970594
+  - 178.43979701281015
   SHP:
-  - 0
-  - 0
-  - 0
   - 0
   - 0
   - 0
@@ -135,13 +105,7 @@ ICE:
   - 0
   - 0
   - 0
-  - 0
-  - 0
-  - 0
   WATER_COATING:
-  - 0
-  - 0
-  - 0
   - 0
   - 0
   - 0
@@ -151,13 +115,10 @@ IMPURITIES:
     CFACTOR: 1
     COATED: false
     CONC:
-    - 0.034098869069123273
-    - 0.0
-    - 0.0
-    - 0.0
-    - 0.0
-    - 0.0
-    - 0.0
+    - 1.160541799869082
+    - 1.590766930046805
+    - 1.3439685639569423
+    - 1.5044940281045196
     FILE: bc_ChCB_rn40_dns1270.nc
     NAME: bc
     UNIT: 0
@@ -165,13 +126,10 @@ IMPURITIES:
     CFACTOR: 1
     COATED: false
     CONC:
-    - 0.10345321498158483
-    - 0.0
-    - 0.0
-    - 0.0
-    - 0.0
-    - 0.0
-    - 0.0
+    - 8.424669600886853
+    - 7.575038216326857
+    - 7.561777925460346
+    - 8.304304812034346
     FILE: dust_balkanski_central_size1.nc
     NAME: dust
     UNIT: 0
@@ -179,13 +137,10 @@ IMPURITIES:
     CFACTOR: 1
     COATED: false
     CONC:
-    - 0.2828777323098328
-    - 0.0
-    - 0.0
-    - 0.0
-    - 0.0
-    - 0.0
-    - 0.0
+    - 23.036030659681963
+    - 20.712837519610122
+    - 20.676579187660213
+    - 22.706910694424142
     FILE: dust_balkanski_central_size2.nc
     NAME: dust
     UNIT: 0
@@ -193,13 +148,10 @@ IMPURITIES:
     CFACTOR: 1
     COATED: false
     CONC:
-    - 0.6635263292444058
-    - 0.0
-    - 0.0
-    - 0.0
-    - 0.0
-    - 0.0
-    - 0.0
+    - 54.03399107865746
+    - 48.5846409167675
+    - 48.49959230687233
+    - 53.261997607678346
     FILE: dust_balkanski_central_size3.nc
     NAME: dust
     UNIT: 0
@@ -207,13 +159,10 @@ IMPURITIES:
     CFACTOR: 1
     COATED: false
     CONC:
-    - 0.2807081076281285
-    - 0.0
-    - 0.0
-    - 0.0
-    - 0.0
-    - 0.0
-    - 0.0
+    - 22.859348174709968
+    - 20.553973535712455
+    - 20.51799329907699
+    - 22.532752504291597
     FILE: dust_balkanski_central_size4.nc
     NAME: dust
     UNIT: 0
@@ -221,15 +170,23 @@ IMPURITIES:
     CFACTOR: 1
     COATED: false
     CONC:
-    - 0.04683634233520485
-    - 0.0
-    - 0.0
-    - 0.0
-    - 0.0
-    - 0.0
-    - 0.0
+    - 3.814098088284328
+    - 3.429444731759163
+    - 3.423441404336242
+    - 3.7596053742898508
     FILE: dust_balkanski_central_size5.nc
     NAME: dust
+    UNIT: 0
+  OC:
+    CFACTOR: 1
+    COATED: false
+    CONC:
+    - 13.99101985793879
+    - 16.064016588350448
+    - 13.080869920335521
+    - 14.05374707610323
+    FILE: brC_Kirch_BCsd.nc
+    NAME: oc
     UNIT: 0
 PATHS:
   BUBBLY_ICE: Data/OP_data/480band/bubbly_ice_files/
@@ -250,7 +207,7 @@ PATHS:
   - ice_Wrn08/ice_Wrn08_
   - ice_Pic16/ice_Pic16_
   RI_ICE: Data/OP_data/480band/
-  SFC: /Data/OP_data/480band/r_sfc/blue_ice_spectrum_s10290721.csv
+  SFC: Data/OP_data/480band/r_sfc/gulkanaAU_ice_spectrum_-1.csv
   SPHERE_ICE: Data/OP_data/480band/ice_spherical_grains/
   SPHERE_WATER: Data/OP_data/480band/water_spherical_grains/
   WVL: Data/OP_data/wavelengths.csv
@@ -276,5 +233,5 @@ RTM:
   INCOMING: 0
   NBR_WVL: 480
   NIR_MAX_IDX: 480
-  SOLZEN: 51
+  SOLZEN: 42
   VIS_MAX_IDX: 39
