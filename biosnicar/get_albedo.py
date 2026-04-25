@@ -10,8 +10,11 @@ from biosnicar.display import display_out_data, plot_albedo
 from biosnicar.setup_snicar import setup_snicar
 from biosnicar.toon_rt_solver import toon_solver
 import os
+import yaml
 
 input_fp = 'biosnicar-py/biosnicar/inputs.yaml'
+with open(input_fp, 'r') as f:
+    inputs = yaml.safe_load(f)
 
 def get(solver, plot, validate):
     (
@@ -21,7 +24,7 @@ def get(solver, plot, validate):
         model_config,
         plot_config,
         impurities,
-    ) = setup_snicar(input_fp)
+    ) = setup_snicar(inputs)
 
     if validate:
         validate_inputs(ice, illumination, impurities)

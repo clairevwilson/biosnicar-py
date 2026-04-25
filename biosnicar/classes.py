@@ -96,8 +96,9 @@ class Ice:
 
     def __init__(self, input_file):
         # use config to calculate refractive indices
-        with open(input_file, "r") as ymlfile:
-            inputs = yaml.load(ymlfile, Loader=yaml.FullLoader)
+        inputs = input_file
+        # with open(input_file, "r") as ymlfile:
+        #     inputs = yaml.load(ymlfile, Loader=yaml.FullLoader)
 
         self.dz = inputs["ICE"]["DZ"]
         self.layer_type = inputs["ICE"]["LAYER_TYPE"]
@@ -150,8 +151,9 @@ class Ice:
         if self.rf < 0 or self.rf > 2:
             raise ValueError("Ice ref index type out of range - between 0 and 2 only")
 
-        with open(input_file, "r") as ymlfile:
-            inputs = yaml.load(ymlfile, Loader=yaml.FullLoader)
+        inputs = input_file
+        # with open(input_file, "r") as ymlfile:
+        #     inputs = yaml.load(ymlfile, Loader=yaml.FullLoader)
 
         refidx_file = xr.open_dataset(
             str(os.path.dirname(os.path.dirname(biosnicar.__file__))
@@ -191,8 +193,9 @@ class Illumination:
     """
 
     def __init__(self, input_file):
-        with open(input_file, "r") as ymlfile:
-            inputs = yaml.load(ymlfile, Loader=yaml.FullLoader)
+        inputs = input_file
+        # with open(input_file, "r") as ymlfile:
+        #     inputs = yaml.load(ymlfile, Loader=yaml.FullLoader)
 
         self.direct = inputs["RTM"]["DIRECT"]
         self.solzen = inputs["RTM"]["SOLZEN"]
@@ -272,8 +275,9 @@ class RTConfig:
     """
 
     def __init__(self, input_file):
-        with open(input_file, "r") as ymlfile:
-            inputs = yaml.load(ymlfile, Loader=yaml.FullLoader)
+        inputs = input_file
+        # with open(input_file, "r") as ymlfile:
+        #     inputs = yaml.load(ymlfile, Loader=yaml.FullLoader)
 
         self.aprx_typ = inputs["RTM"]["APRX_TYP"]
         self.delta = inputs["RTM"]["DELTA"]
@@ -301,8 +305,9 @@ class ModelConfig:
     """
 
     def __init__(self, input_file):
-        with open(input_file, "r") as ymlfile:
-            inputs = yaml.load(ymlfile, Loader=yaml.FullLoader)
+        inputs = input_file
+        # with open(input_file, "r") as ymlfile:
+        #     inputs = yaml.load(ymlfile, Loader=yaml.FullLoader)
 
         self.smooth = inputs["CTRL"]["SMOOTH"]
         self.window_size = inputs["CTRL"]["WINDOW_SIZE"]
@@ -381,8 +386,9 @@ class PlotConfig:
     """
 
     def __init__(self, input_file):
-        with open(input_file, "r") as ymlfile:
-            inputs = yaml.load(ymlfile, Loader=yaml.FullLoader)
+        inputs = input_file
+        # with open(input_file, "r") as ymlfile:
+        #     inputs = yaml.load(ymlfile, Loader=yaml.FullLoader)
 
         self.figsize = inputs["PLOT"]["FIG_SIZE"]
         self.facecolor = inputs["PLOT"]["FACECOLOR"]

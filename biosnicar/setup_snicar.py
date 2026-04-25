@@ -90,9 +90,9 @@ def build_impurities_array(input_file):
     Returns:
         impurities: array of instances of Impurity
     """
-
-    with open(input_file, "r") as ymlfile:
-        inputs = yaml.load(ymlfile, Loader=yaml.FullLoader)
+    inputs = input_file
+    # with open(input_file, "r") as ymlfile:
+    #     inputs = yaml.load(ymlfile, Loader=yaml.FullLoader)
 
     impurities = []
 

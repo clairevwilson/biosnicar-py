@@ -207,7 +207,7 @@ PATHS:
   - ice_Wrn08/ice_Wrn08_
   - ice_Pic16/ice_Pic16_
   RI_ICE: Data/OP_data/480band/
-  SFC: Data/OP_data/480band/r_sfc/gulkanaAU_ice_spectrum_-1.csv
+  SFC: Data/OP_data/480band/r_sfc/gulkanacenter_ice_spectrum_-1.csv
   SPHERE_ICE: Data/OP_data/480band/ice_spherical_grains/
   SPHERE_WATER: Data/OP_data/480band/water_spherical_grains/
   WVL: Data/OP_data/wavelengths.csv
