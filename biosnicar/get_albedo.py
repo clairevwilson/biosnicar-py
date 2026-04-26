@@ -16,7 +16,9 @@ input_fp = 'biosnicar-py/biosnicar/inputs.yaml'
 with open(input_fp, 'r') as f:
     inputs = yaml.safe_load(f)
 
-def get(solver, plot, validate):
+def get(inputs, solver='adding-doubling', 
+        plot=False, validate=False):
+
     (
         ice,
         illumination,
